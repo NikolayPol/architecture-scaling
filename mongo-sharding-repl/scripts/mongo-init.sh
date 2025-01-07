@@ -16,14 +16,16 @@ rs.initiate(
 EOF
 
 ###
-# Инициализация шардов бд
+# Инициализация шардов бд с репликами
 ###
 docker exec -it shard1 mongosh --port 27018 --quiet <<EOF
 rs.initiate(
     {
       _id : "shard1",
       members: [
-        { _id : 0, host : "shard1:27018" }
+        { _id : 0, host : "shard1:27018" },
+        { _id : 1, host : "shard1-replica1:27118" },
+        { _id : 2, host : "shard1-replica2:27218" }
       ]
     }
 );
@@ -34,7 +36,9 @@ rs.initiate(
     {
       _id : "shard2",
       members: [
-        { _id : 1, host : "shard2:27019" }
+        { _id : 3, host : "shard2:27019" },
+        { _id : 4, host : "shard2-replica1:27119" },
+        { _id : 5, host : "shard2-replica2:27219" }
       ]
     }
 );
