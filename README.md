@@ -14,4 +14,8 @@
 ## [Репликация базы данных](mongo-sharding-repl/README.md)      
 ## [Кеширование данных](mongo-sharding-repl-cache/README.md)      
 ## [Горизонтельное масштабирование приложения](api-gateway-service-discovery/README.md)      
+## [Масштабирование с использованием Content Delivery Network (CDN) сервисов](cdn/README.md)      
 
+### Архитектура приложения
+[<img src="./cdn/readme/architecture.png" width="1200"/>](./cdn/readme/architecture.png)   
+    
