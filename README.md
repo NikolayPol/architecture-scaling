@@ -12,4 +12,5 @@
 ## [Приложение без масштабирования](app/README.md)      
 ## [Шардирование базы данных](mongo-sharding/README.md)     
 ## [Репликация базы данных](mongo-sharding-repl/README.md)      
+## [Кеширование данных](mongo-sharding-repl-cache/README.md)      
 
